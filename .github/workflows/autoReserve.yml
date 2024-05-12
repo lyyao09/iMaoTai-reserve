@@ -6,8 +6,8 @@ name: imaotai-action
 on:
   push:
     branches: [ "master" ]
-    paths:
-      - '.github/workflows/**'
+    # paths:
+    #   - '.github/workflows/**'
   schedule:
     - cron: '20 0,1 * * *'
 
@@ -20,7 +20,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     #    runs-on: windows-latest
 
     steps:
