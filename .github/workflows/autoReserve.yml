@@ -9,7 +9,7 @@ on:
     # paths:
     #   - '.github/workflows/**'
   schedule:
-    - cron: '30 1 * * *' # 每天 UTC 时间 1:30，即北京时间 9:30
+    - cron: '0 1 * * *' # 每天 UTC 时间 1:30，即北京时间 9:30
 
 env:
   TZ: Asia/Shanghai
